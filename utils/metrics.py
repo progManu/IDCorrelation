@@ -1,8 +1,8 @@
 import functools
 import math
 import torch
-from utils.intrinsic_dimension import estimate_id
-from utils.utils import cat, normalize, shuffle, standardize
+from .intrinsic_dimension import estimate_id
+from .utils import cat, normalize, shuffle, standardize
 
 
 def id_correlation(dataset1, dataset2, N=100, algorithm='twoNN', return_pvalue=True):
